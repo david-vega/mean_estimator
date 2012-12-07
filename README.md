@@ -1,4 +1,5 @@
-mean_estimator
+Mean estimator
+
 ==============
 
-Mean estimator
+Mean estimator is a ruby function in development
