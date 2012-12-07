@@ -1,7 +1,5 @@
-require '/mean_estimator'
+require_relative '../mean_estimator'
 
-class TestMeanEstimator
-	describe MeanEstimator do
-		it 'should exist'
-	end
+describe MeanEstimator do
+  it 'should exist'
 end
