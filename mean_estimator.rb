@@ -6,6 +6,6 @@ def read_file file_name
   lines
 end
 
-def estimate x, mean, rho
-  estimated_value = mean*rho + (1-rho)*x
+def estimate new_value, mean, rho
+  mean*rho + (1-rho)*new_value
 end
