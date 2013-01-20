@@ -6,9 +6,10 @@ def read_file file_name
   lines
 end
 
-def mean_estimate new_value, mean, rho
+def mean_estimate new_value, mean
+  rho = 0.999
   mean*rho + (1-rho)*new_value
 end
 
-################# test run
+################# test run #################
 
