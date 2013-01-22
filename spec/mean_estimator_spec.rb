@@ -1,7 +1,7 @@
 require_relative '../mean_estimator'
 
 describe 'mean estimator' do
-  it 'should do something' do
+  it 'return the correct value' do
     mean_estimate(3, 2).should == 2.001
   end
 end
