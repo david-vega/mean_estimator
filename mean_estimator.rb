@@ -1,15 +1,22 @@
-def read_file file_name
-  lines = []
-  File.open(file_name, "r").each_line do |line|
-    lines << line.to_f
-  end
-  lines
-end
+@rho = 0.999
 
 def mean_estimate new_value, mean
-  rho = 0.999
-  mean*rho + (1-rho)*new_value
+  mean*@rho + (1-@rho)*new_value
 end
 
 ################# test run #################
 
+
+@value = 10.0+0.5*rand()-0.5*rand()
+
+@mean = mean_estimate @value, @value
+
+$i = 0
+$num = 399
+
+until $i > $num  do
+  @value = 10.0+0.5*rand()-0.5*rand()
+  @mean = mean_estimate @value, @mean
+  puts @mean
+  $i +=1;
+end
