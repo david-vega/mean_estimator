@@ -11,12 +11,12 @@ end
 
 @mean = mean_estimate @value, @value
 
-$i = 0
-$num = 399
+i = 0
+num = 399
 
-until $i > $num  do
+until i > num  do
   @value = 10.0+0.5*rand()-0.5*rand()
   @mean = mean_estimate @value, @mean
   puts @mean
-  $i +=1;
+  i +=1
 end
